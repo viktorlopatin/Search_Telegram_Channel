@@ -3,7 +3,7 @@ import time
 
 
 app = Client("my_account")
-
+app2 = Client("my_account")
 
 
 def search_channel(channel):
@@ -65,8 +65,9 @@ text = """**Скрипт[ ](https://telegra.ph/file/da6ad522f0336fcfbf2da.mp4)д
 Подробнее про работу скрипта можно почитать:
 - [У нас на канале](https://t.me/TechnoShaman/8)
 - [На телеграфе](https://telegra.ph/Skript-dlya-poiska-kanalov-v-Telegram-08-19)."""
-with app as app:
-	app.send_message("me", text)
+with app2 as app2:
+	app2.send_message("me", text)
+
 app.run()
 
 
